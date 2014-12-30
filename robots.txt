@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /assets
+Disallow: /assets/
+Disallow: /admin
+Disallow: /admin/
+
+Sitemap: http://citrus-plus.ru/sitemap.xml
+Host: citrus-plus.ru
