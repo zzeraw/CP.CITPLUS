@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `blocks` (
   `active` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   UNIQUE KEY `alias` (`alias`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- Дамп данных таблицы citrus_plus.blocks: ~2 rows (приблизительно)
 DELETE FROM `blocks`;
@@ -180,7 +180,7 @@ CREATE TABLE IF NOT EXISTS `pages` (
   `active` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   UNIQUE KEY `alias` (`alias`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- Дамп данных таблицы citrus_plus.pages: ~2 rows (приблизительно)
 DELETE FROM `pages`;
@@ -222,49 +222,49 @@ CREATE TABLE IF NOT EXISTS `portfolio_items` (
 DELETE FROM `portfolio_items`;
 /*!40000 ALTER TABLE `portfolio_items` DISABLE KEYS */;
 INSERT INTO `portfolio_items` (`id`, `title`, `annotation`, `body`, `image`, `image_attr_title`, `image_attr_alt`, `nn`, `meta_index`, `meta_title`, `meta_description`, `meta_keywords`, `created_ip`, `created_datetime`, `created_user`, `created_username`, `modified_ip`, `modified_datetime`, `modified_user`, `modified_username`, `active`) VALUES
-	(1, 'Сайт сети фитнес-клубов "Цитрус"', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ', 'citrusfit.png', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 11:00:00', NULL, NULL, NULL, '2014-12-26 11:00:00', NULL, NULL, 1),
+	(1, 'Сайт сети фитнес-клубов "Цитрус"', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ', 'citrusfit.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 11:00:00', NULL, NULL, NULL, '2014-12-26 11:00:00', NULL, NULL, 1),
 	(2, 'Сайт сети баров "Лемон Бар"', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ', 'lemonbar.png', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 12:00:00', NULL, NULL, NULL, '2014-12-26 12:00:00', NULL, NULL, 1),
-	(3, 'Сайт предприятия "Владком"', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 13:00:00', NULL, NULL, NULL, '2014-12-26 13:00:00', NULL, NULL, 1),
-	(4, 'Сайт предприятия "Армико"', NULL, NULL, 'armico-logo_Logo2.png', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 14:00:00', NULL, NULL, NULL, '2014-12-26 14:00:00', NULL, NULL, 1),
-	(5, 'Сайт предприятия "Армико Фундамент"', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 15:00:00', NULL, NULL, NULL, '2014-12-26 15:00:00', NULL, NULL, 1),
-	(6, 'Сайт магазина "Таёжник"', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 16:00:00', NULL, NULL, NULL, '2014-12-26 16:00:00', NULL, NULL, 1),
-	(7, 'Сайт мобильного приложения Inventory Bar', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 17:00:00', NULL, NULL, NULL, '2014-12-26 17:00:00', NULL, NULL, 1),
-	(8, 'Сайт мобильного приложения Tapinap', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 18:00:00', NULL, NULL, NULL, '2014-12-26 18:00:00', NULL, NULL, 1),
-	(9, 'Сайт ателье Татьяны Разумовой', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 19:00:00', NULL, NULL, NULL, '2014-12-26 19:00:00', NULL, NULL, 1),
-	(10, 'Вторая версия сайта предприятия "Бристоль"', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 20:00:00', NULL, NULL, NULL, '2014-12-26 20:00:00', NULL, NULL, 1),
-	(11, 'Сайт предприятия ExtraTrade', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 21:00:00', NULL, NULL, NULL, '2014-12-26 21:00:00', NULL, NULL, 1),
-	(12, 'Рефакторинг сайта турагенства "Гудзон"', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 22:00:00', NULL, NULL, NULL, '2014-12-26 22:00:00', NULL, NULL, 1),
-	(13, 'Серверная часть мобильного приложения Tapinap', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(14, 'CRM для туристического агенства', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(15, 'Сервис для системы контроля доступа для ООО НПП "ЭКРА"', NULL, NULL, '01_ekra_logo_2005_prev.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(16, 'Сервис для учета пропусков для ООО НПП "ЭКРА"', NULL, NULL, '01_ekra_logo_2005_prev.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(17, 'Табель прихода-ухода для ООО НПП "ЭКРА"', NULL, NULL, '01_ekra_logo_2005_prev.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(18, 'Портал спортивных мероприятий для ООО НПП "ЭКРА"', NULL, NULL, '01_ekra_logo_2005_prev.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(19, 'Портал научной деятельности для ООО НПП "ЭКРА"', NULL, NULL, '01_ekra_logo_2005_prev.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(20, 'Портал кредитования для ООО НПП "ЭКРА"', NULL, NULL, '01_ekra_logo_2005_prev.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(21, 'Портал отдела кадров для ООО НПП "ЭКРА"', NULL, NULL, '01_ekra_logo_2005_prev.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(22, 'Каталог IT-услуг для ООО НПП "ЭКРА"', NULL, NULL, '01_ekra_logo_2005_prev.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(23, 'Сервис для отправки и приема электронных служебных записок в ООО НПП "ЭКРА"', NULL, NULL, '01_ekra_logo_2005_prev.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(24, 'Сервис для обработки заявок на командировки в ООО НПП "ЭКРА"', NULL, NULL, '01_ekra_logo_2005_prev.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(25, 'Внутренний телефонный справочник ООО НПП "ЭКРА"', NULL, NULL, '01_ekra_logo_2005_prev.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(26, 'Система учета фонда библиотеки', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(27, 'Он-лайн заказ бизнес-ланчей для кафе «Дубрава»', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(28, 'Прием заявок о неисправностях на предприятии', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(29, 'Мобильное приложение InventoryBar', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(30, 'Мобильное приложение Okaysy', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(31, 'Мобильное приложение Tapinap', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(3, 'Сайт предприятия "Владком"', NULL, NULL, 'vladcom.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 13:00:00', NULL, NULL, NULL, '2014-12-26 13:00:00', NULL, NULL, 1),
+	(4, 'Сайт предприятия "Армико"', NULL, NULL, 'armico.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 14:00:00', NULL, NULL, NULL, '2014-12-26 14:00:00', NULL, NULL, 1),
+	(5, 'Сайт предприятия "Армико Фундамент"', NULL, NULL, 'fundament16.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 15:00:00', NULL, NULL, NULL, '2014-12-26 15:00:00', NULL, NULL, 1),
+	(6, 'Сайт магазина "Таёжник"', NULL, NULL, 'taezhnik.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 16:00:00', NULL, NULL, NULL, '2014-12-26 16:00:00', NULL, NULL, 1),
+	(7, 'Сайт мобильного приложения Inventory Bar', NULL, NULL, 'inventorybar.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 17:00:00', NULL, NULL, NULL, '2014-12-26 17:00:00', NULL, NULL, 1),
+	(8, 'Сайт мобильного приложения Tapinap', NULL, NULL, 'tapinap.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 18:00:00', NULL, NULL, NULL, '2014-12-26 18:00:00', NULL, NULL, 1),
+	(9, 'Сайт ателье Татьяны Разумовой', NULL, NULL, 'tatianarazumova.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 19:00:00', NULL, NULL, NULL, '2014-12-26 19:00:00', NULL, NULL, 1),
+	(10, 'Вторая версия сайта предприятия "Бристоль"', NULL, NULL, 'bristol.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 20:00:00', NULL, NULL, NULL, '2014-12-26 20:00:00', NULL, NULL, 1),
+	(11, 'Сайт предприятия ExtraTrade', NULL, NULL, 'extrablue.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 21:00:00', NULL, NULL, NULL, '2014-12-26 21:00:00', NULL, NULL, 1),
+	(12, 'Рефакторинг сайта турагенства "Гудзон"', NULL, NULL, 'goodzone.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2014-12-26 22:00:00', NULL, NULL, NULL, '2014-12-26 22:00:00', NULL, NULL, 1),
+	(13, 'Серверная часть мобильного приложения Tapinap', NULL, NULL, 'tapinap.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(14, 'CRM для туристического агенства', NULL, NULL, 'goodzone.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(15, 'Сервис для системы контроля доступа для ООО НПП "ЭКРА"', NULL, NULL, 'ekra.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(16, 'Сервис для учета пропусков для ООО НПП "ЭКРА"', NULL, NULL, 'ekra.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(17, 'Табель прихода-ухода для ООО НПП "ЭКРА"', NULL, NULL, 'ekra.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(18, 'Портал спортивных мероприятий для ООО НПП "ЭКРА"', NULL, NULL, 'ekra.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(19, 'Портал научной деятельности для ООО НПП "ЭКРА"', NULL, NULL, 'ekra.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(20, 'Портал кредитования для ООО НПП "ЭКРА"', NULL, NULL, 'ekra.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(21, 'Портал отдела кадров для ООО НПП "ЭКРА"', NULL, NULL, 'ekra.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(22, 'Каталог IT-услуг для ООО НПП "ЭКРА"', NULL, NULL, 'ekra.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(23, 'Сервис для отправки и приема электронных служебных записок в ООО НПП "ЭКРА"', NULL, NULL, 'ekra.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(24, 'Сервис для обработки заявок на командировки в ООО НПП "ЭКРА"', NULL, NULL, 'ekra.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(25, 'Внутренний телефонный справочник ООО НПП "ЭКРА"', NULL, NULL, 'ekra.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(26, 'Система учета фонда библиотеки', NULL, NULL, 'ekra.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(27, 'Он-лайн заказ бизнес-ланчей для кафе «Дубрава»', NULL, NULL, 'dubrava.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(28, 'Прием заявок о неисправностях на предприятии', NULL, NULL, 'ekra.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(29, 'Мобильное приложение InventoryBar', NULL, NULL, 'inventorybar.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(30, 'Мобильное приложение Okaysy', NULL, NULL, 'okaysy.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(31, 'Мобильное приложение Tapinap', NULL, NULL, 'tapinap.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
 	(32, 'Вторая версия сайта сети фитнес-клубов "Цитрус"', NULL, NULL, 'citrusfit.png', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(33, 'Сайт nail-бара "ДевочкиТакиеДевочки"', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(34, 'Сайт-портфолио кондитера Евгении Михайловой', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(35, 'Вторая версия сайта магазина "Таёжник"', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(36, 'Сайт "Единой транспортной карты"', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(37, 'Верстка лендингов для предпритяия Profflex', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(38, 'Редизайн и рефакторинг сайта магазина "Мебельный"', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(39, 'Вторая версия сайта завода "Бристоль"', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(40, 'Сайт production-студии POZOR', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(41, 'Сайт предприятия "ЭлекКом Логистик"', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(42, 'Маркетинговое исследование для ООО "ЭлекКом Логистик"', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
-	(43, 'Внутренний корпоративный портал для ООО НПП "ЭКРА"', NULL, NULL, '01_ekra_logo_2005_prev.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1);
+	(33, 'Сайт nail-бара "ДевочкиТакиеДевочки"', NULL, NULL, 'devochkitakie.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(34, 'Сайт-портфолио кондитера Евгении Михайловой', NULL, NULL, 'ukrushka.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(35, 'Вторая версия сайта магазина "Таёжник"', NULL, NULL, 'taezhnik.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(36, 'Сайт "Единой транспортной карты"', NULL, NULL, 'etk21.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(37, 'Верстка лендингов для предпритяия Profflex', NULL, NULL, 'profflex.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(38, 'Редизайн и рефакторинг сайта магазина "Мебельный"', NULL, NULL, 'mebelnui.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(39, 'Вторая версия сайта завода "Бристоль"', NULL, NULL, 'bristol.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(40, 'Сайт production-студии POZOR', NULL, NULL, 'pozor.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(41, 'Сайт предприятия "ЭлекКом Логистик"', NULL, NULL, 'elekkom.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(42, 'Маркетинговое исследование для ООО "ЭлекКом Логистик"', NULL, NULL, 'elekkom.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+	(43, 'Внутренний корпоративный портал для ООО НПП "ЭКРА"', NULL, NULL, 'ekra.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1);
 /*!40000 ALTER TABLE `portfolio_items` ENABLE KEYS */;
 
 
