@@ -75,6 +75,7 @@ return CMap::mergeArray(
                 'showScriptName' => false,
                 'urlSuffix' => '',
                 'rules' => array(
+                    array('sitemap/default/index', 'pattern'=>'sitemap.xml', 'urlSuffix'=>''),
 
 //                    'forms/ajax/<action:\d+>/*' => 'forms/ajax/<action>',
                     '<module:(forms)>/<controller:(ajax)>/<action:\w+>' => '<module>/<controller>/<action>',
@@ -83,6 +84,8 @@ return CMap::mergeArray(
                     // 'catalog/<id:\d+>' => 'catalog/default/view/',
 
                     // '<alias:[\w\-]+>/*' => array('pages/default/view/', 'alias'=>'<alias>'),
+                    //
+
                 ),
             ),
         ),

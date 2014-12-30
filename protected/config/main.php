@@ -53,6 +53,17 @@ return array(
 		'errorHandler' => array(
 			'errorAction' => 'site/error',
 		),
+        // 'cache' => array(
+        //     'class' => 'system.caching.CMemCache',
+        //     'useMemcached' => true,
+        //     'servers'=>array(
+        //         array(
+        //             'host' => '127.0.0.1',
+        //             'port' => 11211,
+        //             'weight' => 60,
+        //         ),
+        //     ),
+        // ),
         'log' => array(
             'class'=>'CLogRouter',
             'routes'=>array(
